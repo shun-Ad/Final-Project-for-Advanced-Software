@@ -1,0 +1,13 @@
+-------------------------------------------------------------
+def buy_and_sell(appleprices):
+    max_profit_val, current_max_val = 0, 0 
+for price in reversed(appleprices):
+    current_max_val = max(current_max_val, price)
+    potential_profit = current_max_val - price
+    max_profit_val = max(potential_profit, max_profit_val)
+print("Maximum profit is:", max_profit_val)
+
+
+Maximum profit is: 80.854996
+
+-------------------------------------------------------------
